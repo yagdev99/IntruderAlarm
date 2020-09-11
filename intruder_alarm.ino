@@ -14,9 +14,9 @@ char* pwd = "";
 HTTPClient http;
 
 boolean sendNotification = false;
+
 //Enter your IFTTT Webhooks key here
 char* key = "";
-
 
 //timer setup
 boolean startTimer = false;
@@ -32,8 +32,6 @@ void setup() {
 
   pinMode(LED_BUILTIN,OUTPUT);
   digitalWrite(LED_BUILTIN,LOW);
-  
-
   
   WiFi.mode(WIFI_OFF);
   delay(1000);
@@ -64,14 +62,11 @@ void setup() {
   for(i = 0; i < 30 - time_passed; i++){
     blk(500);  
   }
-
   attachInterrupt(digitalPinToInterrupt(PIR_PIN),motionDetected,RISING);
 }
 
-void loop() {
-  
+void loop() {  
   now = millis();
-
   
   if(startTimer && (now - prevTime) >= on_time*000){
     digitalWrite(LED_PIN, LOW);
@@ -79,8 +74,7 @@ void loop() {
     runDetector = true;
   }
 
-  if(sendNotification){
-    
+  if(sendNotification){    
     sendNotification = false;      
     http.begin("http://maker.ifttt.com/trigger/motion_detected/with/key/" + key);
     delay(1000);  
@@ -88,9 +82,7 @@ void loop() {
     http.end();
     Serial.println("NOTIFICATION SENT");  
   }
-
 }
-
 
 ICACHE_RAM_ATTR void motionDetected(){
   if(runDetector){  
@@ -107,8 +99,7 @@ ICACHE_RAM_ATTR void motionDetected(){
 }
 
 
-void blk(int x){
-  
+void blk(int x){  
   digitalWrite(LED_PIN,HIGH);
   delay(x);  
   digitalWrite(LED_PIN,LOW);

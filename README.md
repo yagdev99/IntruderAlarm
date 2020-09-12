@@ -30,6 +30,15 @@ A passive infrared sensor (PIR sensor) is an electronic sensor which measures in
   ![1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/7.png)
   
 Here we have used active buzzer to make sound after motion detected. The active buzzer has an internal oscillating source, the buzzer will sound as soon as it is energized.
+
+| Pin or Control      | Function |
+| ----------- | ----------- |
+|Ground pin|Ground input|
+|Input Pin|When Input is LOW, the buzzer is turned On. When input it is HIGH the buzzer does not sound*|
+|Power Pin|3.3 to 5 VDC Supply input|
+
+* *We have used a low trigger buzzer 
+
   
   * #### Jumper Wires
   

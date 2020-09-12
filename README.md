@@ -114,3 +114,5 @@ Also Breadboard can also be used without soldering, which makes it easy to remov
  4. Click on Documentation
  
  5. Now replace "{event}" with the your even name in Step 5 of IFTTT Applet creation
+ 
+ 6. Now copy the key and paste it in the code

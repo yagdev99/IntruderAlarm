@@ -7,13 +7,23 @@
   
 ![1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/2.png)
       
-This has been selected as the controller for this system due to its compact size, compatibility, stress-free interfacing over several other type of controller. ESP8266 is an open source Wi-Fi enabled module. It is integrated with TCP/IP protocol stack that can give any microcontroller access to your Wi-Fi network. The ESP8266 is capable of either hosting an application or offloading all Wi-Fi networking functions from another application processor.
+This has been selected as the controller for this system due to its compact size, ease of use and compatibility with Arduino IDE. ESP8266 is an open source Wi-Fi enabled module. It is integrated with TCP/IP protocol stack that can give any microcontroller access to your Wi-Fi network. The ESP8266 is capable of either hosting an application or offloading all Wi-Fi networking functions from another application processor. ESP8266 contains 8 digital i/o pins and one analog i/o pin.
   
   * #### PIR Motion Sensor (HR SC501)
   
   ![1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/4.png)
   
 A passive infrared sensor (PIR sensor) is an electronic sensor which measures infrared radiation in its field of view from objects. PIR sensors sense general movement, but don’t have information on who moved or what. These sensors allow you to sense motion, generally used to detect whether a human has moved in or out of the sensor range. They are small, inexpensive, low-power, easy to use and don’t wear out.
+
+| Pin or Control      | Function |
+| ----------- | ----------- |
+| Time Delay Adjust      | Sets how long the output remains high after detecting motion.... Anywhere from 5 seconds to 5 minutes.|
+| Sensitivity Adjust   | Sets the detection range.... from 3 meters to 7 meters   |
+|Trigger Selection Jumper|Set for single or repeatable triggers.|
+|Ground pin|Ground input|
+|Output Pin|Low when no motion is detected.. High when motion is detected. High is 3.3V|
+|Power Pin|5 to 20 VDC Supply input|
+
 
   * #### Buzzer(One we have used in this project is LOW LEVEL TRIGGER i.e. will be triggered when the input is LOW)
   

@@ -5,7 +5,7 @@
 
   * #### ESP8266 (ESP-12E) Board 
   
-  * ![1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/2.png)
+![1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/2.png)
       
 This has been selected as the controller for this system due to its compact size, compatibility, stress-free interfacing over several other type of controller. ESP8266 is an open source Wi-Fi enabled module. It is integrated with TCP/IP protocol stack that can give any microcontroller access to your Wi-Fi network. The ESP8266 is capable of either hosting an application or offloading all Wi-Fi networking functions from another application processor.
   

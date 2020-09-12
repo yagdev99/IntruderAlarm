@@ -1,4 +1,5 @@
-# motionDetectorESP8266
+# IoT based Intruder Alarm using ESP8266
+
 
 ### For this project the following will be required:
 

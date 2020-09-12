@@ -1,7 +1,7 @@
 # IoT based Intruder Alarm using ESP8266
 
 
-### For this project the following will be required:
+## For this project the following will be required:
 
   * #### ESP8266 (ESP-12E) Board 
   
@@ -53,4 +53,45 @@ Also Breadboard can also be used without soldering, which makes it easy to remov
 *	We have programmed the NodeMCU to make an HTTP GET request to our IFTTT Webhooks app.
 *	Whenever the HTTP GET request has been made then it will trigger a notification alert on our mobile phone or the device connected.
 
+## Circuit and Connection
 
+![Schematic](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/11.jpg)
+
+## IFTTT Applet Creation 
+ * Download the Andriud app from Play Store
+ * Create an Account (If you don't have a account)
+ 
+ 1. Click on your profile icon and select the create option
+ 
+ 2. Now click on +This
+ 
+ 3. Search for "Webhooks" and select it
+ 
+ 4. Choose trigger option, "Receive a Web Request"
+ 
+ 5. Give a name to your event. In our case we have used "motion_detected"
+ 
+ 6. Now click on +That
+ 
+ 7. Now from “choose action service”,
+   
+ 8. Search for notification in the search box and click on the notification icon.
+    • Note that you must be installed and logged in the IFTTT app on your           phone for the notifications to work.
+    
+ 9. Choose Simple Notification
+ 
+ 10. Type the custom message you want to receive the notification.
+ 
+ 11. Click Finish.
+ 
+ #### Obtaining the HTTP GET request URL
+ 
+ 1. Log in to your IFTT account
+ 
+ 2. Click on profile and choose "My Services"
+ 
+ 3. Select Webhooks
+ 
+ 4. Click on Documentation
+ 
+ 5. Now replace "{event}" with the your even name in Step 5 of IFTTT Applet creation

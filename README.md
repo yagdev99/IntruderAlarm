@@ -13,11 +13,13 @@ This has been selected as the controller for this system due to its compact size
   
   ![1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/4.png)
   
+  ![control1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/25.png)   ![control2](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/26.png)
+  
 A passive infrared sensor (PIR sensor) is an electronic sensor which measures infrared radiation in its field of view from objects. PIR sensors sense general movement, but don’t have information on who moved or what. These sensors allow you to sense motion, generally used to detect whether a human has moved in or out of the sensor range. They are small, inexpensive, low-power, easy to use and don’t wear out.
 
 | Pin or Control      | Function |
 | ----------- | ----------- |
-| Time Delay Adjust      | Sets how long the output remains high after detecting motion.... Anywhere from 5 seconds to 5 minutes.|
+| Time Delay Adjust      | Sets how long the output remains high after detecting motion.... Anywhere from 3 seconds to 5 minutes.|
 | Sensitivity Adjust   | Sets the detection range.... from 3 meters to 7 meters   |
 |Trigger Selection Jumper|Set for single or repeatable triggers.|
 |Ground pin|Ground input|
@@ -29,7 +31,9 @@ A passive infrared sensor (PIR sensor) is an electronic sensor which measures in
   
   ![1](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/7.png)
   
+  
 Here we have used active buzzer to make sound after motion detected. The active buzzer has an internal oscillating source, the buzzer will sound as soon as it is energized.
+ 
 
 | Pin or Control      | Function |
 | ----------- | ----------- |

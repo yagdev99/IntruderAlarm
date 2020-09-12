@@ -116,3 +116,8 @@ Also Breadboard can also be used without soldering, which makes it easy to remov
  5. Now replace "{event}" with the your even name in Step 5 of IFTTT Applet creation
  
  6. Now copy the key and paste it in the code
+ 
+ 
+ ## Basic flow of the program
+ 
+ ![flow](https://github.com/yagdev99/motionDetectorESP8266/blob/master/pics/23.png)

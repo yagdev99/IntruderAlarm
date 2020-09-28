@@ -20,7 +20,7 @@ char* key = "";
 
 //timer setup
 boolean startTimer = false;
-int runDetector = true;
+boolean runDetector = true;
 int now = millis();
 int prevTime = 0;
 int on_time = 30;
@@ -68,7 +68,7 @@ void setup() {
 void loop() {  
   now = millis();
   
-  if(startTimer && (now - prevTime) >= on_time*000){
+  if(startTimer && (now - prevTime) >= on_time*1000){
     digitalWrite(LED_PIN, LOW);
     digitalWrite(BUZZER_PIN,HIGH);
     runDetector = true;
